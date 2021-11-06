@@ -112,15 +112,19 @@ let choiceSorted = game.userChoice.sort();
 choiceSorted.toString();
 console.log(game.userChoice.toString());
 
-for (let i = 0; i < winningString.length; i++) {
-    if (winningString[i] === choiceSorted.toString()) {
-        console.log("WIN");
-    }
-    else { return}
+if (winningString.indexOf(choiceSorted.toString()) !== -1 ) {
+    console.log("WIN")
+}
+
+// for (let i = 0; i < winningString.length; i++) {
+//     if (winningString[i] === choiceSorted.toString()) {
+//         console.log("WIN");
+//     }
+//     else { return}
 }
 
 
-}
+
 
 
 
